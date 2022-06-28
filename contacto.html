@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto - Barbería Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <header>
+        <div class="caja">
+            <h1><img id="logo" src="./imagenes/logo.png" alt="Logo de la barbería"></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        </div>
+        
+    </header>
+    <main>
+        <form>
+            <label for="nombre">Nombre y apellido</label>
+            <input type="text" id="nombre" class="input-padron" required>
+
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" class="input-padron" placeholder="email@dominio.com" required>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" class="input-padron" placeholder="(xx) xxxx xxxx" required>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea cols="70" rows="10" id="mensaje" class="input-padron"></textarea>
+
+            <fieldset>
+                <legend>¿Cómo le gustaría que le contactaramos?</legend>
+
+                <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                <label for="radio-whats"><input type="radio" name="contacto" value="whats" id="radio-whats" checked>WhatsApp</label>
+                
+            </fieldset>
+            <fieldset>
+                <legend>¿En cuál horario prefirere ser atendido?</legend>
+                <select>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            
+            </fieldset>
+            <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la barbería ALURA?</label>
+            <input type="submit" value="Enviar formulario" class="enviar">
+        </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>8:00 - 20:00</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>8:00 - 20:00</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>8:00 - 20:00</td>
+                    </tr>
+                </tbody>
+            </table>
+    </main>
+    <footer>
+        <img src="./imagenes/logo-blanco.png" alt="Logo de la barbería">
+        <p class="copyright">Barbería Alura-2020</p>
+            <p class="copyright">Éste proyecto pertenece a una empresa ficticia y fue creada con fines educativos.</p>
+            <div class="contactame">
+                <h2 class="copyright">Creado por: Julio Estudillo</h2>
+                <ul class="lista-contacto">
+                    <li class="mi-lista"><a href="http://www.linkedin.com/in/julio-estudillo"><img src="./imagenes/img-in.png" class="img-contacto"> Linkedin</a></li>
+                    <li class="mi-lista"><a href="https://github.com/Julio-Estudillo"><img src="./imagenes/img-github.png" class="img-contacto"> Github</a></li>
+                    <li class="mi-lista"><img src="./imagenes/img-correo.png" class="img-contacto"> julioestudillo8@gmail.com</li>
+                </ul>
+            </div>
+    </footer>
+</html>
